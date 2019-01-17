@@ -13,12 +13,6 @@ from scipy.spatial import distance
 wine_data_red   = pd.read_csv('http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv',sep=';')
 wine_data_white = pd.read_csv('http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv',sep=';')
 
-# DEBUG
-#print(wine_data_red)
-#print(wine_data_white)
-#print(len(wine_data_red))
-#print(len(wine_data_white))
-
 ############################################
 ################ DATA PRE-PROCESSING  
 ############################################
@@ -30,14 +24,6 @@ wine_data_white = wine_data_white[:10]
 ## Converting all values to float 
 wine_data_red = wine_data_red.astype(float)
 wine_data_white = wine_data_white.astype(float)
-
-# DEBUG
-#print(wine_data_red.columns)
-#print(wine_data_white.columns)
-#print(wine_data_red)
-#print(wine_data_white)
-#print(len(wine_data_red))
-#print(len(wine_data_white))
 
 print('*******************************************')
 print('TASK 1 - START')
@@ -124,8 +110,7 @@ scale_wine_data_red     = preprocessing.StandardScaler().fit(wine_data_red[['fix
 scale_wine_data_white   = preprocessing.StandardScaler().fit(wine_data_white[['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']])
 z_wine_data_red     = scale_wine_data_red.transform(wine_data_red[['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']])
 z_wine_data_white   = scale_wine_data_white.transform(wine_data_white[['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']])
-#print(z_wine_data_red)
-#print(z_wine_data_white)
+
 print('*******************************************')
 print('Z-score normalized values for RED WINE')
 print('*******************************************')
