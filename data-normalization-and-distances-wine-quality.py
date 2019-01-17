@@ -42,66 +42,66 @@ print('min-max normalized values for RED WINE')
 print('*******************************************')
 print(tabulate(min_max_wine_data_red, headers=["fixed acidity","volatile acidity","citric acid","residual sugar","chlorides","free sulfur dioxide","total sulfur dioxide","density","pH","sulphates","alcohol","quality"], tablefmt='fancy_grid'))
 print('*******************************************')
-print('Min-value after min-max scaling for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(min_max_wine_data_red[:,0].min(),
-              min_max_wine_data_red[:,1].min(),
-              min_max_wine_data_red[:,2].min(),
-              min_max_wine_data_red[:,3].min(),
-              min_max_wine_data_red[:,4].min(),
-              min_max_wine_data_red[:,5].min(),
-              min_max_wine_data_red[:,6].min(),
-              min_max_wine_data_red[:,7].min(),
-              min_max_wine_data_red[:,8].min(),
-              min_max_wine_data_red[:,9].min(),
-              min_max_wine_data_red[:,10].min(),
-              min_max_wine_data_red[:,11].min()))
-print('*******************************************')
-print('Max-value after min-max scaling for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(min_max_wine_data_red[:,0].max(),
-              min_max_wine_data_red[:,1].max(),
-              min_max_wine_data_red[:,2].max(),
-              min_max_wine_data_red[:,3].max(),
-              min_max_wine_data_red[:,4].max(),
-              min_max_wine_data_red[:,5].max(),
-              min_max_wine_data_red[:,6].max(),
-              min_max_wine_data_red[:,7].max(),
-              min_max_wine_data_red[:,8].max(),
-              min_max_wine_data_red[:,9].max(),
-              min_max_wine_data_red[:,10].max(),
-              min_max_wine_data_red[:,11].max()))
+# print('Min-value after min-max scaling for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(min_max_wine_data_red[:,0].min(),
+              # min_max_wine_data_red[:,1].min(),
+              # min_max_wine_data_red[:,2].min(),
+              # min_max_wine_data_red[:,3].min(),
+              # min_max_wine_data_red[:,4].min(),
+              # min_max_wine_data_red[:,5].min(),
+              # min_max_wine_data_red[:,6].min(),
+              # min_max_wine_data_red[:,7].min(),
+              # min_max_wine_data_red[:,8].min(),
+              # min_max_wine_data_red[:,9].min(),
+              # min_max_wine_data_red[:,10].min(),
+              # min_max_wine_data_red[:,11].min()))
+# print('*******************************************')
+# print('Max-value after min-max scaling for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(min_max_wine_data_red[:,0].max(),
+              # min_max_wine_data_red[:,1].max(),
+              # min_max_wine_data_red[:,2].max(),
+              # min_max_wine_data_red[:,3].max(),
+              # min_max_wine_data_red[:,4].max(),
+              # min_max_wine_data_red[:,5].max(),
+              # min_max_wine_data_red[:,6].max(),
+              # min_max_wine_data_red[:,7].max(),
+              # min_max_wine_data_red[:,8].max(),
+              # min_max_wine_data_red[:,9].max(),
+              # min_max_wine_data_red[:,10].max(),
+              # min_max_wine_data_red[:,11].max()))
 
 print('*******************************************')
 print('min-max normalized values for WHITE WINE')
 print('*******************************************')
 print(tabulate(min_max_wine_data_white, headers=["fixed acidity","volatile acidity","citric acid","residual sugar","chlorides","free sulfur dioxide","total sulfur dioxide","density","pH","sulphates","alcohol","quality"], tablefmt='fancy_grid'))
 print('*******************************************')
-print('Min-value after min-max scaling for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(min_max_wine_data_white[:,0].min(),
-              min_max_wine_data_white[:,1].min(),
-              min_max_wine_data_white[:,2].min(),
-              min_max_wine_data_white[:,3].min(),
-              min_max_wine_data_white[:,4].min(),
-              min_max_wine_data_white[:,5].min(),
-              min_max_wine_data_white[:,6].min(),
-              min_max_wine_data_white[:,7].min(),
-              min_max_wine_data_white[:,8].min(),
-              min_max_wine_data_white[:,9].min(),
-              min_max_wine_data_white[:,10].min(),
-              min_max_wine_data_white[:,11].min()))
-print('*******************************************')
-print('Max-value after min-max scaling for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(min_max_wine_data_white[:,0].max(),
-              min_max_wine_data_white[:,1].max(),
-              min_max_wine_data_white[:,2].max(),
-              min_max_wine_data_white[:,3].max(),
-              min_max_wine_data_white[:,4].max(),
-              min_max_wine_data_white[:,5].max(),
-              min_max_wine_data_white[:,6].max(),
-              min_max_wine_data_white[:,7].max(),
-              min_max_wine_data_white[:,8].max(),
-              min_max_wine_data_white[:,9].max(),
-              min_max_wine_data_white[:,10].max(),
-              min_max_wine_data_white[:,11].max()))
+# print('Min-value after min-max scaling for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(min_max_wine_data_white[:,0].min(),
+              # min_max_wine_data_white[:,1].min(),
+              # min_max_wine_data_white[:,2].min(),
+              # min_max_wine_data_white[:,3].min(),
+              # min_max_wine_data_white[:,4].min(),
+              # min_max_wine_data_white[:,5].min(),
+              # min_max_wine_data_white[:,6].min(),
+              # min_max_wine_data_white[:,7].min(),
+              # min_max_wine_data_white[:,8].min(),
+              # min_max_wine_data_white[:,9].min(),
+              # min_max_wine_data_white[:,10].min(),
+              # min_max_wine_data_white[:,11].min()))
+# print('*******************************************')
+# print('Max-value after min-max scaling for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(min_max_wine_data_white[:,0].max(),
+              # min_max_wine_data_white[:,1].max(),
+              # min_max_wine_data_white[:,2].max(),
+              # min_max_wine_data_white[:,3].max(),
+              # min_max_wine_data_white[:,4].max(),
+              # min_max_wine_data_white[:,5].max(),
+              # min_max_wine_data_white[:,6].max(),
+              # min_max_wine_data_white[:,7].max(),
+              # min_max_wine_data_white[:,8].max(),
+              # min_max_wine_data_white[:,9].max(),
+              # min_max_wine_data_white[:,10].max(),
+              # min_max_wine_data_white[:,11].max()))
 
 #####################################################
 ################ Z-score normalized values
@@ -116,65 +116,65 @@ print('Z-score normalized values for RED WINE')
 print('*******************************************')
 print(tabulate(z_wine_data_red, headers=["fixed acidity","volatile acidity","citric acid","residual sugar","chlorides","free sulfur dioxide","total sulfur dioxide","density","pH","sulphates","alcohol","quality"], tablefmt='fancy_grid'))
 print('*******************************************')
-print('Mean after standardization for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(z_wine_data_red[:,0].mean(),
-              z_wine_data_red[:,1].mean(),
-              z_wine_data_red[:,2].mean(),
-              z_wine_data_red[:,3].mean(),
-              z_wine_data_red[:,4].mean(),
-              z_wine_data_red[:,5].mean(),
-              z_wine_data_red[:,6].mean(),
-              z_wine_data_red[:,7].mean(),
-              z_wine_data_red[:,8].mean(),
-              z_wine_data_red[:,9].mean(),
-              z_wine_data_red[:,10].mean(),
-              z_wine_data_red[:,11].mean()))
-print('*******************************************')
-print('Standard deviation after standardization for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(z_wine_data_red[:,0].std(),
-              z_wine_data_red[:,1].std(),
-              z_wine_data_red[:,2].std(),
-              z_wine_data_red[:,3].std(),
-              z_wine_data_red[:,4].std(),
-              z_wine_data_red[:,5].std(),
-              z_wine_data_red[:,6].std(),
-              z_wine_data_red[:,7].std(),
-              z_wine_data_red[:,8].std(),
-              z_wine_data_red[:,9].std(),
-              z_wine_data_red[:,10].std(),
-              z_wine_data_red[:,11].std()))
+# print('Mean after standardization for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(z_wine_data_red[:,0].mean(),
+              # z_wine_data_red[:,1].mean(),
+              # z_wine_data_red[:,2].mean(),
+              # z_wine_data_red[:,3].mean(),
+              # z_wine_data_red[:,4].mean(),
+              # z_wine_data_red[:,5].mean(),
+              # z_wine_data_red[:,6].mean(),
+              # z_wine_data_red[:,7].mean(),
+              # z_wine_data_red[:,8].mean(),
+              # z_wine_data_red[:,9].mean(),
+              # z_wine_data_red[:,10].mean(),
+              # z_wine_data_red[:,11].mean()))
+# print('*******************************************')
+# print('Standard deviation after standardization for RED wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(z_wine_data_red[:,0].std(),
+              # z_wine_data_red[:,1].std(),
+              # z_wine_data_red[:,2].std(),
+              # z_wine_data_red[:,3].std(),
+              # z_wine_data_red[:,4].std(),
+              # z_wine_data_red[:,5].std(),
+              # z_wine_data_red[:,6].std(),
+              # z_wine_data_red[:,7].std(),
+              # z_wine_data_red[:,8].std(),
+              # z_wine_data_red[:,9].std(),
+              # z_wine_data_red[:,10].std(),
+              # z_wine_data_red[:,11].std()))
 print('*******************************************')
 print('Z-score normalized values for RED WINE')
 print('*******************************************')
 print(tabulate(z_wine_data_white, headers=["fixed acidity","volatile acidity","citric acid","residual sugar","chlorides","free sulfur dioxide","total sulfur dioxide","density","pH","sulphates","alcohol","quality"], tablefmt='fancy_grid'))
 print('*******************************************')
-print('Mean after standardization for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(z_wine_data_white[:,0].mean(),
-              z_wine_data_white[:,1].mean(),
-              z_wine_data_white[:,2].mean(),
-              z_wine_data_white[:,3].mean(),
-              z_wine_data_white[:,4].mean(),
-              z_wine_data_white[:,5].mean(),
-              z_wine_data_white[:,6].mean(),
-              z_wine_data_white[:,7].mean(),
-              z_wine_data_white[:,8].mean(),
-              z_wine_data_white[:,9].mean(),
-              z_wine_data_white[:,10].mean(),
-              z_wine_data_white[:,11].mean()))
-print('*******************************************')
-print('Standard deviation after standardization for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
-      .format(z_wine_data_white[:,0].std(),
-              z_wine_data_white[:,1].std(),
-              z_wine_data_white[:,2].std(),
-              z_wine_data_white[:,3].std(),
-              z_wine_data_white[:,4].std(),
-              z_wine_data_white[:,5].std(),
-              z_wine_data_white[:,6].std(),
-              z_wine_data_white[:,7].std(),
-              z_wine_data_white[:,8].std(),
-              z_wine_data_white[:,9].std(),
-              z_wine_data_white[:,10].std(),
-              z_wine_data_white[:,11].std()))
+# print('Mean after standardization for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(z_wine_data_white[:,0].mean(),
+              # z_wine_data_white[:,1].mean(),
+              # z_wine_data_white[:,2].mean(),
+              # z_wine_data_white[:,3].mean(),
+              # z_wine_data_white[:,4].mean(),
+              # z_wine_data_white[:,5].mean(),
+              # z_wine_data_white[:,6].mean(),
+              # z_wine_data_white[:,7].mean(),
+              # z_wine_data_white[:,8].mean(),
+              # z_wine_data_white[:,9].mean(),
+              # z_wine_data_white[:,10].mean(),
+              # z_wine_data_white[:,11].mean()))
+# print('*******************************************')
+# print('Standard deviation after standardization for WHITE wine data: \nfixed acidity={:.4f} \nvolatile acidity={:.4f} \ncitric acid={:.4f} \nesidual sugar={:.4f}, \nchlorides={:.4f} \nfree sulfur dioxide={:.4f} \ntotal sulfur dioxide={:.4f} \ndensity={:.4f} \npH={:.4f} \nsulphates={:.4f} \nalcohol={:.4f} \nquality={:.4f}, \n'
+      # .format(z_wine_data_white[:,0].std(),
+              # z_wine_data_white[:,1].std(),
+              # z_wine_data_white[:,2].std(),
+              # z_wine_data_white[:,3].std(),
+              # z_wine_data_white[:,4].std(),
+              # z_wine_data_white[:,5].std(),
+              # z_wine_data_white[:,6].std(),
+              # z_wine_data_white[:,7].std(),
+              # z_wine_data_white[:,8].std(),
+              # z_wine_data_white[:,9].std(),
+              # z_wine_data_white[:,10].std(),
+              # z_wine_data_white[:,11].std()))
 
 #####################################################
 ################ mean subtracted normalized (msn) values
@@ -220,7 +220,7 @@ print('*******************************************')
 print('manhatten distance')
 print('*******************************************')
 manhatten_dist_matrix = distance.cdist(wine_data_red, wine_data_red, metric='cityblock')
-print(tabulate(manhatten_dist_matrix, tablefmt='fancy_grid'))
+# print(tabulate(manhatten_dist_matrix, tablefmt='fancy_grid'))
 
 manhatten_dist_output = np.zeros([10,2])
 
@@ -248,7 +248,7 @@ print('*******************************************')
 print('euclidean distance')
 print('*******************************************')
 euclidean_dist_matrix = distance.cdist(wine_data_red, wine_data_red, metric='euclidean')
-print(tabulate(euclidean_dist_matrix, tablefmt='fancy_grid'))
+# print(tabulate(euclidean_dist_matrix, tablefmt='fancy_grid'))
 
 euclidean_dist_output = np.zeros([10,2])
 
@@ -277,7 +277,7 @@ print('*******************************************')
 print('cosine distance')
 print('*******************************************')
 cosine_dist_matrix = distance.cdist(wine_data_red, wine_data_red, metric='cosine')
-print(tabulate(cosine_dist_matrix, tablefmt='fancy_grid'))
+# print(tabulate(cosine_dist_matrix, tablefmt='fancy_grid'))
 
 cosine_dist_output = np.zeros([10,2])
 
