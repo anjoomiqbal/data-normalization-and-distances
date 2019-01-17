@@ -297,5 +297,7 @@ for i in range (0, len(cosine_dist_matrix[0,:])):
 cosine_dist_output[:,0] = np.amin(cosine_dist_matrix,axis=1)
 print(tabulate(cosine_dist_output,headers=["nearest", "farthest"], tablefmt='fancy_grid'))
 
-
+print('*******************************************')
+print('TASK 2 - END')
+print('*******************************************')
 
